@@ -5,7 +5,7 @@ import org.springframework.mail.SimpleMailMessage;
 public class MainApp {
     public static void main(String[] args){
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-        MailSender mailSender = (MailSender) context.getBean("mailSender");
+        MailSender mailSender = (MailSender) context.getBean("mailSender2");
         System.out.println("Sending text...");
         SimpleMailMessage message = new SimpleMailMessage();
         message.setFrom("h.nguyen03101996@gmail.com");
